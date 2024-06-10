@@ -217,34 +217,32 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
+    <h2 class="title is-3">Comparison with RAG Model</h2>
     <div class="columns is-centered">
 
-      <!-- Comapre With RAG. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Compare with RAG</h2>
+          <h2 class="title is-3">CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer.</h2>
           <p>
-            CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer. Each point indicates a different retrieval quality (the number is recall @ n, lower is better).
+            Each point indicates a different retrieval quality (the number is recall @ n, lower is better).
           </p>
           <img src="./static/images/rag_plot.PNG"
              class="interpolation-image"
              alt="Compare with RAG."/>
         </div>
       </div>
-      <!--/ Comapre With RAG. -->
 
-      <!-- Compare with Long LLMs -->
       <div class="column">
-        <h2 class="title is-3">Compare with Long LLM</h2>
+        <h2 class="title is-3">CoA Mitigates “Lost-in-the-Middle” Phenomenon</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-               CoA Improvement is More Obvious When Long Context Models Meet Longer Inputs. Each bar indicates the samples with a different source length.
+               Performance of CoA and Full on Natural Questions. CoA mitigates the lost-in-the-middle issue. 
+              X-axis is the index of document with gold answer where small number indicates gold answer is closer to start.
             </p>
-            <img src="./static/images/long_haiku.PNG"
+            <img src="./static/images/lost.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="CoA mitigates Lost in the middle."/>
           </div>
 
         </div>

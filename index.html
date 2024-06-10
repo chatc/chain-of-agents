@@ -217,6 +217,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    
     <h2 class="title is-3">Comparison with RAG Model</h2>
       
    <p>Overall results of CoA. CoA significantly outperforms Vanilla and RAG using various
@@ -228,7 +229,10 @@
        alt="Main results."/>
     <br />
     <br />
+
+    
     <div class="columns is-centered">
+      
       <div class="column">
         <div class="content">
           <h3 class="title is-3">CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer</h2>
@@ -238,9 +242,7 @@
             and the size of the point indicates the improvement of CoA over RAG. 
             Each point indicates a different retrieval quality (the number is recall @ n, lower is better).
           </p>
-          <img src="./static/images/rag_plot.PNG"
-             class="interpolation-image"
-             alt="Compare with RAG."/>
+          
         </div>
       </div>
 
@@ -248,21 +250,45 @@
         <h3 class="title is-3">CoA Mitigates “Lost-in-the-Middle” Phenomenon</h2>
         <div class="columns is-centered">
           <div class="column content">
-            <p>
-              To assess the “lost-in-the-middle” effect on Vanilla and CoA models, we replicated the original study by randomly 
-              selecting 500 samples from their Natural Question dataset to create a QA dataset. Figure shows the performance of CoA and Full on 
-              Natural Questions. CoA mitigates the lost-in-the-middle issue. X-axis is the index of document with gold answer where small 
-              number indicates gold answer is closer to start.
-            </p>
-            <img src="./static/images/lost_in_middle.PNG"
-               class="interpolation-image"
-               alt="CoA mitigates Lost in the middle."/>
+            <img src="./static/images/rag_plot.PNG"
+             class="interpolation-image"
+             alt="Compare with RAG."/>
           </div>
 
         </div>
       </div>
     </div>
 
+
+
+    <div class="columns is-centered">
+      
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-3">CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer</h2>
+          <p>
+            Comparison on NarrativeQA. X-axis/Y-axis indicate RAG/CoA performance while each point represents a bin. 
+            The number indicates the chunk index of gold answer (ratio of number of samples in bracket), 
+            and the size of the point indicates the improvement of CoA over RAG. 
+            Each point indicates a different retrieval quality (the number is recall @ n, lower is better).
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="column">
+        <h3 class="title is-3">CoA Mitigates “Lost-in-the-Middle” Phenomenon</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/lost_in_middle.PNG"
+               class="interpolation-image"
+               alt="CoA mitigates Lost in the middle."/>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Comparison with Long LLMs</h2>

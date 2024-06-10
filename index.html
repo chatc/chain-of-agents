@@ -282,30 +282,41 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
-           
+           Overall results of CoA. CoA significantly outperforms Vanilla and RAG using various
+           backbone LLMs on all datasets.
            <img src="./static/images/main_results.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="Main results."/>
         </div>
         <div class="item item-chair-tp">
+          Comparison with long context LLMs on NarrativeQA and BookSum. CoA significantly
+          outperforms Claude 3 with 200k context limits. No Trun./Trun. indicates the source text in the sample
+          is less/more than 200k tokens which does not need/needs truncation for vanilla (200k) baseline.
+          Average is the mean value across all samples.
            <img src="./static/images/long_results.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="Long LLM results."/>
         </div>
         <div class="item item-shiba">
+          Comparison between CoA and other multi-agent frameworks. CoA with sequential agents
+          outperforms other designs with multiple parallel agents including Merge and Hierarchical.
            <img src="./static/images/multiagent_results.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="Multiagent results."/>
         </div>
         <div class="item item-fullbody">
+          Ablation on CoA. Manager plays an important role in CoA, and left-to-right yields the best
+          performance among other reading orders including Right-to-Left and Permutation.
            <img src="./static/images/ablation.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="Ablation Study."/>
         </div>
         <div class="item item-blueshirt">
+          Comparison of three multi-path augmentation through judge or voting. Multi-path CoA
+          furthers enhance the performance.
            <img src="./static/images/ensemble.PNG"
                class="interpolation-image"
-               alt="Compare with Long LLMs."/>
+               alt="Multi-path CoA."/>
         </div>
         
       </div>

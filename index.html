@@ -232,7 +232,6 @@
 
     
     <div class="columns is-centered">
-       
       <div class="column">
         <div class="content">
          <h3 class="title is-3">CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer</h2>
@@ -242,10 +241,8 @@
             and the size of the point indicates the improvement of CoA over RAG. 
             Each point indicates a different retrieval quality (the number is recall @ n, lower is better).
           </p>
-          
         </div>
       </div>
-
       <div class="column">
         <div class="columns is-centered">
           <div class="column content">
@@ -253,11 +250,31 @@
              class="interpolation-image"
              alt="Compare with RAG."/>
           </div>
-
         </div>
       </div>
     </div>
    
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- RAG -->
+        <h3 class="title is-4">Multi-agent Collaboration in CoA Enables Complex Reasoning over Long Context</h3>
+        <div class="content has-text-justified">
+          <p>
+            The figure displays a sample prediction from HotpotQA. To find the correct answer, RAG retrieves text
+           chunks with high semantic similarity with the query. However, conducting multi-hop reasoning is
+           challenging as the critical first-hop answer often lacks semantic relevance to the query. In contrast,
+           CoA operates differently: the first agent explores related topics without knowing the query’s answer,
+           aiding subsequent inference. The second agent, also unaware of the answer, broadens the topic
+           scope by incorporating new information. The third agent finally discovers the answer, synthesizing
+           information from earlier agents and new data to complete the reasoning chain. This collaborative
+           approach highlights CoA’s ability to facilitate complex reasoning across long context tasks.
+          </p>
+        </div>
+        <img src="./static/images/rag.jfif"
+               class="interpolation-image"
+               alt="A case study."/>
+      </div>
+    </div>
     
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -313,31 +330,7 @@
       
     </div>
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Case Study</h2>
 
-        <!-- RAG -->
-        <h3 class="title is-4">Multi-agent Collaboration in CoA Enables Complex Reasoning over Long Context</h3>
-        <div class="content has-text-justified">
-          <p>
-            The figure displays a sample prediction from HotpotQA. To find the correct answer, RAG retrieves text
-           chunks with high semantic similarity with the query. However, conducting multi-hop reasoning is
-           challenging as the critical first-hop answer often lacks semantic relevance to the query. In contrast,
-           CoA operates differently: the first agent explores related topics without knowing the query’s answer,
-           aiding subsequent inference. The second agent, also unaware of the answer, broadens the topic
-           scope by incorporating new information. The third agent finally discovers the answer, synthesizing
-           information from earlier agents and new data to complete the reasoning chain. This collaborative
-           approach highlights CoA’s ability to facilitate complex reasoning across long context tasks.
-          </p>
-        </div>
-        <img src="./static/images/rag.jfif"
-               class="interpolation-image"
-               alt="A case study."/>
-
-
-      </div>
-    </div>
   </div>
 </section>
 

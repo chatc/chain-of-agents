@@ -186,7 +186,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overall Structure of Chain-of-Agent</h2>
-        <img src="./static/images/coa.png"
+        <img src="./static/images/coa.PNG"
              class="interpolation-image"
              alt="Overall Structure of Chain-of-Agent."/>
       </div>
@@ -201,35 +201,31 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- Comapre With RAG. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Compare w/ RAG</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            CoA Improvement is More Obvious When RAG Fails to Retrieve Gold Answer.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/rag_plot.PNG"
+             class="interpolation-image"
+             alt="Compare with RAG."/>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Comapre With RAG. -->
 
-      <!-- Matting. -->
+      <!-- Compare with Long LLMs -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Compare w/ Long LLM</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+               CoA Improvement is More Obvious When Long Context Models Meet Longer Inputs.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
+            <img src="./static/images/long_haiku.PNG"
+               class="interpolation-image"
+               alt="Compare with Long LLMs."/>
           </div>
 
         </div>
